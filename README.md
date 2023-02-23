@@ -1,2 +1,2 @@
-# PHPBasico
-Repositório dedicado ao curso básico de PHP (40 Horas) disponibilizado gratuitamente pelo Curso em Vídeo.
+# PHP Moderno
+Repositório dedicado ao curso de PHP Moderno disponibilizado gratuitamente pelo Curso em Vídeo.
