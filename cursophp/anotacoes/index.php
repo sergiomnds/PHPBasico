@@ -15,6 +15,53 @@
 
         $salario = 2512.50;
         echo " Seu salário é $salario";
+
+        //* No PHP há a diferença entre aspas duplas -> "exemplo" e só uma aspa -> 'exemplo'
+        //? Para concatenar, invés do '+' como em outras linguagens usa do '.'.
+        $valor1 = 'Curso'; 
+        $valor2 = 'PHP';
+        $valor3 = "Curso " . "PHP";
+        $valor4 = $valor1 . $valor2;
+
+        echo $valor3;
+        echo $valor4;
+
+        //! Em PHP existe intepretação das Strings, QUANDO USA ASPAS DUPLAS
+        //! Aspas simples NÃO interpreta conteúdo.
+        echo "Curso \u{1F418}"; //* Saída: Curso *emoji elefante*
+        echo 'Curso \u{1F418}'; //* Saída: Curso \u{1F418}
+
+        //? Então um echo que use de variaveis é usado aspas duplas " ".
+        $exemplo = 'Exemplo'; //Na declaração não requer interpretar, se usada a variavel em um echo "$exemplo" vai funcionar.
+        echo "Usando $nome de novo.";
+        echo 'Usando $nome mas sem retorno.';
+
+        //? Para constantes não funciona declarar elas nas aspas duplas
+        const ESTADO = "RJ";
+        echo "Moro no ESTADO"; //Saída: Moro no ESTADO
+        echo 'Moro no ' . ESTADO;
+        //? Par funções pode acontecer o mesmo problema
+        echo "Estamos no ano de " . date('Y');
+
+        //* Para usar aspas dentro de um echo com aspas duplas, usa VALVULA DE ESCAPE
+        //? Usa da \ antes do elemento.
+        $nomeLutador = "Rodrigo";
+        $snom = "Nogueira";
+        echo "$nomeLutador \"Minotaruo\" $snom"; //Indicando que não acaba na segunda aspa.
+        //* Outras 'escapes sequences'
+        /*
+        \n Nova Linha \t Tabulação horizontal \\ Barra invertida \$ Sinal de Cifrão \u{} Codeprint Unicode
+        */
+
+        //? String Heredoc e Nowdoc - POUCO USADO
+        //* O Nowdoc como as aspas -> 'Frase' então não interpreta
+        echo <<< FRASE
+            Olá galera do Canal?
+
+            Como vai $nome?
+            etc
+               etc etc
+        FRASE;
     ?>
 </body>
 </html>
