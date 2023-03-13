@@ -11,6 +11,8 @@
     <?php 
         $numero = 0x1A;
         echo "O valor da variavél é $numero";
+
+        phpinfo();
     ?>
 </body>
 </html>
