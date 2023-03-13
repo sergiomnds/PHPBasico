@@ -62,6 +62,13 @@
             etc
                etc etc
         FRASE;
+        
+        //?OPERADORES ARITMÉTICOS
+        //O padrão de +. -, /, *. Tem o ** para potencia e % para resto de divisão.
+        //? Existe a diferença entre . e + no PHP
+        //* 2 + 2 = 4
+        //! "2" + "2" = 4 -> E esse 4 é int, o PHP faz a conversão para fazer a soma.
+        //* "2" . "2" = 22
     ?>
 </body>
 </html>
