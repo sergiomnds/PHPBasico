@@ -69,6 +69,19 @@
         //* 2 + 2 = 4
         //! "2" + "2" = 4 -> E esse 4 é int, o PHP faz a conversão para fazer a soma.
         //* "2" . "2" = 22
+    
+        //?FUNÇÕES ARITMÉTICAS
+        //abs(a) -> Retorna o valor absoluto (sem sinal)
+        //base_convert(a, b, c) -> Converter de uma base para outra (a = numero a converter), (b = base primeira), (c = base que vai ser convertida)
+        //EX: base_convert(1011, 2, 10)
+        //ceil() ; floor(); round() -> arredondar para cima, para baixo e só arredondar
+        //hypot(a, b) -> calcula a hipotenusa (a, b = catetos)
+        //intdiv() -> Divisão apenas inteira (EX: intdiv(5, 2) = 2)
+        //min(a, b, c...z), max(a, b, c...z) = Mostra o menor e maior valor entre os informados
+        //pi() ; Constante: M_PI -> retorna o valor de pi
+        //pow(5, 2) -> Fazer potencia, mas hoje não precisa.
+        //sin(), cos(), tan() -> Calcula seno, cosseno e tangeno.
+        //sqrt() -> Realiza a raiz quadrada.
     ?>
 </body>
 </html>
