@@ -20,6 +20,7 @@
         $variavel = true; //Retorna:  boolean(5.2)
         $variavel = "Gustavo"; //Retorna:  string(7) "Gustavo" -> mostrando a qnt. de caracteres
         var_dump($variavel); //Mostra as informações da variavel 
+        phpinfo();
     ?>
 </body>
 </html>
